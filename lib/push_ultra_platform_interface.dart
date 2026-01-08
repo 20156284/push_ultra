@@ -26,4 +26,19 @@ abstract class PushUltraPlatform extends PlatformInterface {
   Future<String?> getPlatformVersion() {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
+
+  /// 设置 Apple APNS
+  Future<bool> setupAppleApns() {
+    throw UnimplementedError('setupAppleApns() has not been implemented.');
+  }
+
+  /// 获取远程推送设备 Token
+  Future<Map<String, dynamic>> getRemoteNotificationDeviceToken() {
+    throw UnimplementedError('getRemoteNotificationDeviceToken() has not been implemented.');
+  }
+
+  /// 设置推送通知回调
+  void setNotificationHandler(Function(Map<String, dynamic>) handler) {
+    throw UnimplementedError('setNotificationHandler() has not been implemented.');
+  }
 }
